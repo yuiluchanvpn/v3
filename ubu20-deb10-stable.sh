@@ -21,7 +21,7 @@ export IP=$( curl -sS icanhazip.com )
 mkdir -p /var/lib/kyt
 
 # Simpan IP VPS ke dalam file ipvps.conf
-echo "IP=$IP" > /var/lib/kyt/ipvps.conf
+echo "IP=$domain" > /var/lib/kyt/ipvps.conf
 
 # // Clear Data
 clear
