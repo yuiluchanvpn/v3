@@ -2,7 +2,10 @@
 ```
 apt update && apt install -y tmux
 tmux new-session -s v3
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/yuiluchanvpn/v3/main/ubu20-deb10-stable.sh && chmod +x ubu20-deb10-stable.sh && ./ubu20-deb10-stable.sh
+apt update -y && apt upgrade -y && apt install -y dos2unix wget && \
+wget -q https://raw.githubusercontent.com/yuiluchanvpn/v3/main/ubu20-deb10-stable.sh && \
+dos2unix ubu20-deb10-stable.sh && chmod +x ubu20-deb10-stable.sh && \
+./ubu20-deb10-stable.sh
 
 ```
 
