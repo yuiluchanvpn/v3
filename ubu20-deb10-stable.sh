@@ -55,10 +55,6 @@ else
     exit 1
 fi
 
-# Install dependencies
-apt update -y
-apt install -y lsof
-
 # // IP Address Validating
 if [[ $IP == "" ]]; then
     echo -e "${EROR} IP Address ( ${YELLOW}Not Detected${NC} )"
@@ -89,6 +85,21 @@ clear
 apt install ruby -y
 gem install lolcat
 apt install wondershaper -y
+# Install dependencies
+apt update -y
+apt install -y lsof 
+apt install -y curl
+apt install -y unzip
+apt install -y zip
+apt install -y jq
+apt install -y net-tools
+apt install -y dnsutils
+apt install -y bc
+apt install -y netcat
+apt install -y cron
+apt install -y bash-completion
+apt install -y figlet
+apt install -y lolcat 
 clear
 # REPO    
     REPO="https://raw.githubusercontent.com/yuiluchanvpn/v3/main/"
